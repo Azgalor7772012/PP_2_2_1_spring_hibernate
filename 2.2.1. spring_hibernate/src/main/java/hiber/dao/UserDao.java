@@ -8,6 +8,6 @@ public interface UserDao {
    void add(User user);
    List<User> listUsers();
 
-   User getBySeriesAndIndex(String model, int Series);
+   User getUserByModel(String model);
 
 }

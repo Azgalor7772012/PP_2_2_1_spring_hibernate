@@ -30,7 +30,7 @@ public class UserDaoImp implements UserDao {
    }
 
    @Override
-   public User getBySeriesAndIndex(String model, int series) {
+   public User getUserByModel(String model) {
       User user = null;
       try(Session session = sessionFactory.openSession()) {
          TypedQuery<Car> query =
